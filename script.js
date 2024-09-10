@@ -31,4 +31,8 @@ function toggleDarkMode() {
 
     // Apply dark mode to the button
     document.querySelector('button').classList.toggle('dark-mode', isChecked);
+
+    // Change the text for dark/light mode
+    const toggleText = document.getElementById('toggleText');
+    toggleText.textContent = isChecked ? 'Toggle Light Mode' : 'Toggle Dark Mode';
 }
