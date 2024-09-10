@@ -10,6 +10,9 @@ function fetchPassword() {
     fetch(apiUrl)
         .then(response => response.text())  // We use .text() because the API returns plain text
         .then(password => {
+            // Remove the surrounding double quotes from the password
+            password = password.replace(/^"|"$/g, '');  // This removes quotes from the start and end of the string
+
             // Clear any existing passwords in the list
             const passwordList = document.getElementById('passwordList');
             passwordList.innerHTML = '';
