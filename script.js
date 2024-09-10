@@ -4,7 +4,7 @@ document.getElementById('generateButton').addEventListener('click', fetchPasswor
 
 function fetchPasswords() {
     // API URL to fetch passwords
-    const apiUrl = 'https://password.ninja/api/password?numOfPasswords=10&';
+    const apiUrl = 'https://password.ninja/api/password?instruments=true&colours=true&shapes=true&food=true&sports=true&transport=true&symbols=true&randCapitals=true&numOfPasswords=1&maxLength=16&';
 
     // Fetch passwords from the API
     fetch(apiUrl)
