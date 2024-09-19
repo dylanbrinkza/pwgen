@@ -4,7 +4,7 @@ document.getElementById('generateButton').addEventListener('click', fetchPasswor
 document.getElementById('darkModeToggle').addEventListener('change', toggleDarkMode);
 
 function fetchPassword() {
-    const apiUrl = 'https://password.ninja/api/password?instruments=true&colours=true&shapes=true&food=true&sports=true&transport=true&symbols=true&randCapitals=true&numOfPasswords=1&maxLength=16&';
+    const apiUrl = 'https://www.psswrd.net/api/v1/password/?length=12&lower=1&upper=1&int=1&special=1';
 
     fetch(apiUrl)
         .then(response => response.text())
